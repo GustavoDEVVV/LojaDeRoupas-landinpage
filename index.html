@@ -7,6 +7,158 @@
     <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
+    <header>
+        <h1>sua logo</h1>
+        <div class="links">
+            <a href="#">Esportes</a>
+            <a href="#">Casual</a>
+            <a href="#">Social</a>
+        </div>
+
+        <div class="pesquisar">____________________</div>
+    </header>
+
+    <Section class="principal">
+        <div class="texto">
+            <h1>Seja Bem vindo a</h1>
+            <h1>nome da sua loja</h1>
+            <h1>aproveite as orfertas e promoções</h1>
+        </div>
+
+        <div class="carrosel">
+            <div class="carrossel-container">
+                <div class="carrossel-slides">
+                    <div class="carrossel-slide">
+                        <img src="./assents/01-3015202-042-comfort-cafe-2.jpg" alt="Slide 1">
+                    </div>
+                    <div class="carrossel-slide">
+                        <img src="./assents/a66a3865-0487-4e9a-985c-5090464bd9581-d897b6194cf95db3aa16353456523198-640-0.jpeg" alt="Slide 2">
+                    </div>
+                    <div class="carrossel-slide">
+                        <img src="./assents/bbdc9513f8cf601.avif" alt="Slide 3">
+                    </div>
+                </div>
+                <div class="indicators">
+                    <span class="indicator" onclick="currentSlide(1)"></span>
+                    <span class="indicator" onclick="currentSlide(2)"></span>
+                    <span class="indicator" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+        </div>
+    </Section>
     
+    <h1>Social</h1>
+
+    <section class="social">
+
+        <div class="card1">
+            <img src="./assents/01-3015202-042-comfort-cafe-2.jpg" alt="">
+
+            <h1 id="titulo-card">Sapato social</h1>
+            span.descriçã<o-card>blblblbllblalblalblalba</o-card>
+        </div>
+
+        <div class="card1">
+            <img src="./assents/a66a3865-0487-4e9a-985c-5090464bd9581-d897b6194cf95db3aa16353456523198-640-0.jpeg" alt="">
+
+            <h1 id="titulo-card">Sapato social</h1>
+            span.descriçã<o-card>blblblbllblalblalblalba</o-card>
+        </div>
+
+        <div class="card1">
+            <img src="./assents/bbdc9513f8cf601.avif" alt="">
+
+            <h1 id="titulo-card">Sapato social</h1>
+            span.descriçã<o-card>blblblbllblalblalblalba</o-card>
+        </div>
+
+
+    </section>
+
+
+    <h1>Esportes</h1>
+
+    <section class="esportes">
+
+        <h1 class="texto_esportes">
+            Preços apartir de 50$
+        </h1>
+
+    <div class="img_maior">
+        <img src="./assents/01-3015202-042-comfort-cafe-2.jpg" alt="">
+    </div>    
+
+    <div class="img_menor">
+        <img src="./assents/a66a3865-0487-4e9a-985c-5090464bd9581-d897b6194cf95db3aa16353456523198-640-0.jpeg" alt="">
+        <img src="./assents/bbdc9513f8cf601.avif" alt="">
+        <img src="./assents/a66a3865-0487-4e9a-985c-5090464bd9581-d897b6194cf95db3aa16353456523198-640-0.jpeg" alt="">
+        <img src="./assents/bbdc9513f8cf601.avif" alt="">
+    </div>
+    </section>
+
+    <h1>Casual</h1>
+
+    <section class="casual">
+
+        
+        <div class="cards">
+            <div class="card_menor">
+                <img src="./assents/01-3015202-042-comfort-cafe-2.jpg" alt="">
+            </div>
+            <div class="card_maior"><span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At exercitationem molestiae autem quasi ex excepturi ab vel hic accusantium fugit. Tempore, molestiae nesciunt! Sequi consequatur minima, deserunt quisquam porro ducimus.</span></div>
+        </div>
+        
+        <div class="cards">
+            <div class="card-texto">
+                <h1>Encontre a melhor roupa para <br> um passeio no parque </h1>
+            </div>
+            <div class="card_menor">
+                <img src="./assents/01-3015202-042-comfort-cafe-2.jpg" alt="">
+            </div>
+            <div class="card_maior"><span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At exercitationem molestiae autem quasi ex excepturi ab vel hic accusantium fugit. Tempore, molestiae nesciunt! Sequi consequatur minima, deserunt quisquam porro ducimus.</span></div>
+        </div>
+
+        <div class="cards">
+            <div class="card_menor">
+                <img src="./assents/01-3015202-042-comfort-cafe-2.jpg" alt="">
+            </div>
+            <div class="card_maior"><span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At exercitationem molestiae autem quasi ex excepturi ab vel hic accusantium fugit. Tempore, molestiae nesciunt! Sequi consequatur minima, deserunt quisquam porro ducimus.</span></div>
+        </div>
+
+
+    </section>
+
+    <script>
+                let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            const slides = document.getElementsByClassName("carrossel-slide");
+            const indicators = document.getElementsByClassName("indicator");
+
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < indicators.length; i++) {
+                indicators[i].className = indicators[i].className.replace(" active", "");
+            }
+
+            slides[slideIndex - 1].style.display = "block";
+            indicators[slideIndex - 1].className += " active";
+        }
+    </script>
+
 </body>
 </html>
