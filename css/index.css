@@ -2,11 +2,106 @@
     font-size: 62.5%;
 }
 
+body{
+    background: linear-gradient(to right, #F2F2F2, #FFFFFF);
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+section{
+    scroll-snap-align: start;
+}
+
+.titulos_SubTitulo{
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.titulos_SubTitulo h1{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 5rem;
+    color: #2C3E50;
+}
+
+.titulos_SubTitulo span{
+    font-family: "Assistant", sans-serif;
+    color: #8E44AD;
+    font-size: 2rem;
+}
+
+.titulos_SubTitulo_esportes{
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.titulos_SubTitulo_esportes h1{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 5rem;
+    color: #E74C3C;
+}
+
+.titulos_SubTitulo_esportes span{
+    font-family: "Assistant", sans-serif;
+    color: #000000;
+    font-size: 2rem;
+}
+
+.titulos_SubTitulo_casual{
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.titulos_SubTitulo_casual h1{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 5rem;
+    color: #D35400;
+}
+
+.titulos_SubTitulo_casual span{
+    font-family: "Assistant", sans-serif;
+    color: #808000;
+    font-size: 2rem;
+}
+
+
 header{
     display: flex;
     justify-content: center;
+    margin-bottom: 10rem;
     align-items: center;
     gap: 30rem;
+}
+
+header h1{
+    color: #2C3E50;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 3rem;
+}
+
+.links a{
+    text-decoration: none;
+    padding: 2rem;
+    font-weight: 500;
+    transition: 1s;
+    color: #F1C40F;
+    font-family: "Moderustic", sans-serif;
+    font-size: 2rem;
+}
+
+.links a:hover{
+    color: #2C3E50;
+}
+
+.pesquisar{
+    font-size: 1.5rem;
+    transition: 0.5s;
+}
+
+.pesquisar:hover{
+    color: #F1C40F;
 }
 
 
@@ -16,12 +111,22 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30rem;
+    margin-bottom: 30rem;
+    gap: 10rem;
 }
 
+.texto h1{
+    font-family: "Assistant", sans-serif;
+    font-size: 5rem;
+    color: #2C3E50;
+}
+
+.texto span{
+    color: #F1C40F;
+}
 
 .carrossel-container {
-    width: 20rem;
+    width: 30rem;
     max-width: 800px;
     position: relative;
     overflow: hidden;
@@ -38,7 +143,8 @@ header{
 }
 
 .carrossel-slide img {
-    width: 20rem;
+    width: 30rem;
+    filter: drop-shadow(1PX 1PX 1PX black);
     display: block;
 }
 
@@ -67,22 +173,73 @@ header{
 .social{
     display: flex;
     justify-content: space-evenly;
+    margin-bottom: 30rem;
 }
 
 .card1{
-    width: 20rem;
-    height: 20rem;
-    background-color: aqua;
+    width: 27rem;
+    height: 46em;
+    background-color: none;
+    border: 2px solid #717171;
+    border-radius: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     box-sizing: border-box;
     padding: 2rem;
+    transition: 1s;
+}
+
+.card2{
+    width: 27rem;
+    height: 50rem;
+    background-color: none;
+    border: 2px solid #717171;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    padding: 2rem;
+    transition: 1s;
+}
+
+.card1:hover{
+    background-color: #7171712c;
+}
+
+.card2:hover{
+    background-color: #7171712c;
 }
 
 .card1 img{
-    width: 10rem;
+    width: 20rem;
+}
+
+.card2 img{
+    width: 20rem;
+}
+
+#titulo-card{
+    font-family: "Bebas Neue", sans-serif;
+    color: #717171;
+    font-weight: 200;
+    font-size: 2rem;
+}
+
+.descricao{
+    font-family: "Assistant", sans-serif;
+    font-size: 1.8REM;
+    color: #8E44AD;
+}
+
+details{
+    font-family: "Bebas Neue", sans-serif;
+    color: #717171;
+    font-weight: 200;
+    font-size: 1.5rem;
 }
 
 
@@ -91,58 +248,86 @@ header{
 .esportes{
     display: flex;
     justify-content: center;
-    gap: 10rem;
+    gap: 3rem;
+    margin-bottom: 30rem;
 }
 
 .img_maior img{
-    width: 50rem;
+    width: 30rem;
 }
 
 .img_menor img{
     display: block;
-    width: 10rem;
-    height: 10rem;
+    margin-bottom: 1rem;
+    width: 8rem;
+}
+
+#img1:hover{
+    scale: 1.2;
+}
+#img2:hover{
+    scale: 3;
+    background-color: #BDC3C7;
+}
+#img3:hover{
+    scale: 2;
+    background-color: #BDC3C7;
+}
+#img4:hover{
+    scale: 2;
+    background-color: #BDC3C7;
+}
+#img5:hover{
+    scale: 3;
+    background-color: #BDC3C7;
 }
 
 /* parte casual */
 
 .casual{
-
-}
-
-.card-texto{
-    border-radius: 50%;
-    margin-right: 20rem;
-
-}
-
-.cards{
-    justify-content: right;
-    margin-top: 2rem;
-    margin-right: 20rem;
     display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10rem;
 }
 
-.card_menor{
-    width: 15rem;
-    height: 15rem;
-    display: flex;
+.img-card {
+    width: 36rem;
+    overflow: hidden;
     border-radius: 2rem;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    box-sizing: border-box;
-    background-color: aqua;
+    transition: 1s;
 }
 
-.card_menor img{
-    width: 10rem;
-}
-
-.card_maior{
+.img-card img {
+    display: flex;
     width: 30rem;
-    height: 15rem;
-    color: aliceblue;
-    border-radius: 2rem;
-    background-color: black;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+.texto-escondido {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(243, 243, 243, 0.836);
+    opacity: 0;
+    display: flex;
+    transition: 0.1s;
+}
+
+.texto-escondido h1 {
+    color: #D35400;
+    font-family: "Assistant", sans-serif;
+    font-size: 2.3rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.img-card:hover .texto-escondido {
+    opacity: 1;
+}
+
+.img-card:hover{
+    scale: 1.1;
 }
