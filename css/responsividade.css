@@ -1,0 +1,145 @@
+@media(min-width: 320px) and (max-width: 720px) {
+
+    header{
+        gap: 2rem;
+        margin-bottom: 5rem;
+    }
+
+    header h1{
+        font-size: 1rem;
+    }
+
+    .links a{
+        padding: 0;
+        font-size: 1rem;
+    }
+
+    .pesquisar{
+        font-size: 0.8rem;
+    }
+
+    .principal{
+        gap: 0;
+    }
+
+    .texto h1{
+        font-size: 1.5rem;
+    }
+
+    .carrossel-container{
+        width: 10rem;
+    }
+
+    .carrossel-slide img{
+        width: 9rem;
+    }
+
+    .indicator{
+        width: 10px;
+        height: 10px;
+    }
+
+    .card1{
+        width: 9rem;
+        height: 21rem;
+    }
+
+    .card2{
+        width: 9rem;
+        height: 21rem;
+    }
+
+    .card1 img{
+        width: 5rem;
+    }
+    
+    .card2 img{
+        width: 5rem;
+    }
+
+    #titulo-card{
+        font-size: 1rem;
+    }
+    
+    .descricao{
+        font-size: 1REM;
+    }
+
+    details{
+        font-size: 1rem;
+    }
+
+    .img_maior img{
+        width: 10rem;
+    }
+
+    .img_menor img{
+        width: 2rem;
+    }
+
+    #img1:hover{
+        scale: 1.2;
+    }
+    #img2:hover{
+        scale: 4;
+        background-color: #BDC3C7;
+    }
+    #img3:hover{
+        scale: 3;
+        background-color: #BDC3C7;
+    }
+    #img4:hover{
+        scale: 3;
+        background-color: #BDC3C7;
+    }
+    #img5:hover{
+        scale: 4;
+        background-color: #BDC3C7;
+    }
+
+    .img-card img {
+        width: 10rem;
+    }    
+
+    .texto-escondido h1 {
+        font-size: 1rem;
+    }
+
+    .principal{
+        margin-bottom: 5rem;
+    }
+
+    .social{
+        margin-bottom: 10rem;
+    }
+
+    .esportes{
+        margin-bottom: 5rem;
+    }
+    
+    .titulos_SubTitulo h1{
+        font-size: 2rem;
+    }
+    
+    .titulos_SubTitulo span{
+        font-size: 1rem;
+    }
+    
+    
+    .titulos_SubTitulo_esportes h1{
+        font-size: 2rem;
+    }
+    
+    .titulos_SubTitulo_esportes span{
+        font-size: 1rem;
+    }
+    
+    .titulos_SubTitulo_casual h1{
+        font-size: 2rem;
+    }
+    
+    .titulos_SubTitulo_casual span{
+        font-size: 1rem;
+    }
+    
+}
