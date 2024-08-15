@@ -19,7 +19,7 @@
     }
 
     .principal{
-        gap: 0;
+        gap: 1rem;
     }
 
     .texto h1{
@@ -66,7 +66,7 @@
     }
 
     details{
-        font-size: 1rem;
+        display: none;
     }
 
     .img_maior img{
